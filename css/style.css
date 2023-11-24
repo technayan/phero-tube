@@ -1,0 +1,125 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
+
+/* Reset CSS */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+}
+
+.bg-red {
+    background-color: #ff1f3d !important;
+    color: #fff !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+/* Navbar CSS */
+.navbar {
+    border-bottom: 1px solid rgba(23, 23, 23, 0.2);
+    padding: 15px 0;
+}
+
+#sort-btn,
+#blog-btn {
+    padding: 8px 15px;
+    border-radius: 3px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+#sort-btn {
+    background: rgba(38, 38, 38, 0.2);
+    color: #252525;
+}
+
+#sort-btn:hover,
+#blog-btn {
+    background: #ff1f3d;
+    color: #fff;
+}
+
+#blog-btn:hover {
+    background: #de011e;
+}
+
+/* Category Button CSS */
+.category-btn {
+    font-size: 16px;
+    font-weight: 500;
+    color: rgba(38, 38, 38, 0.7);
+    background-color: rgba(38, 38, 38, 0.15);
+    padding: 8px 20px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: rgba(38, 38, 38, 0.2);
+}
+
+
+/* Video CSS */
+.video-wrapper:hover {
+    cursor: pointer;
+}
+
+.thumb {
+    border-radius: 8px;
+    height: 150px;
+}
+
+.upload-time {
+    position: absolute;
+    bottom: 12px;
+    right: 12px;
+    background: #171717;
+    color: #fff;
+    padding: 4px 5px;
+    border-radius: 4px;
+    font-size: 10px;
+}
+
+.channel-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.video-title {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.verified-icon {
+    width: 20px;
+    height: 20px;
+}
+
+/* No Video CSS */
+.no-video-icon {
+    width: 150px;
+}

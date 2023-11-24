@@ -1,0 +1,16 @@
+@media (max-width: 575px) {
+    .logo img {
+        width: 130px;
+    }
+
+    #sort-btn,
+    #blog-btn,
+    .category-btn {
+        font-size: 16px;
+        padding: 8px 15px;
+    }
+
+    .thumb {
+        height: 200px;
+    }
+}

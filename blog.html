@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="./css/responsive.css">
+    <title>PHero Tube | Blog</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <div class="navbar justify-content-between">
+                <div class="logo">
+                    <img src="./assets/Logo.png" alt="PH Tube" class="img-fluid">
+                </div>
+                <!-- <button id="sort-btn" onclick="sortByViews()">Sort By View</button> -->
+                <a href="index.html" class="btn" id="blog-btn">Home</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="container">
+            <div class="accordion my-5" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Discuss the scope of var, let, and const
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Var:</strong>
+                      <p>Variables declared with 'var' are called function-scoped. It means if they are declared in a function then they are only visible inside the function. We can't access the variables outside the function. If 'var' is declared outside the function then it becomes a global variable which can be accessible inside and also outside of any function.</p><br>
+
+                      <p>'var' declarations are hoisted to the top of their scope. which means they are moved to the top during the compilation phase and we can use it before declaration but the value will be undefined until it's declaration.</p><br><br>
+
+                      <strong>Let:</strong>
+                      <p>Variables declared with 'let' are called block-scoped. It means they are only visible within the block {} where they are defined. 'let' also becomes global variable when it is declared outside of any curly braces {}.</p><br>
+
+                      <p>'let' declarations are not hoisted to top of their scope. I means we can't use it before declaration. Unless it will throw an error.</p><br><br>
+
+                      <strong>Const:</strong>
+                      <p>'const' is also a block-scoped like 'let'. But we use 'const' to declare a constant variable. It means its value will never be modified. But if we declare any array or object with 'const' then we can modify their elements but cant't reasign the variable.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Tell us the use cases of null and undefined
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>Null:</strong>
+                      <p>We assign 'null' to a variable to intentionally indicate that the variable has no value. 'null' can be assigned to an object value to intensionally represent the absence of the value. It can be used as placeholder for an object that has not been initialized. We often use it to reset an object variable.</p><br><br>
+
+                      <strong>Undefined:</strong>
+                      <p>If we declared a variable but didn't assign any value to it then, the value of the variable is 'undefined'. The parameters of a function that were not passed are 'undefined'. If a function returns nothing then the result of the function will be 'undefined'.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        What do you mean by REST API?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <strong>REST API:</strong>
+                      <p>REST stands for Representational State Transfer, and API stands for Application Programming Interfaces. REST is an architectural style for designing networked applications. RESTful APIs are the set of constraints and principles applied to the web services that adhere to the REST architecture.</p><br>
+
+                      <p>Web service exchange data between client and server through APIs. RESTful web services follow the REST architecture. Each request from the client to the server must contain all the needed information to understand the request. Resources are the main abstractions in REST. Resources are uniquely identified by an URI (Uniform Resource Identifier). We can manipulate the resources using standard HTTP methods like GET, POST, PUT, and DELETE. RESTful APIs have an uniform and consistatent interface. This inclueds a consistent way to address resources through URIs. A consistant way to represent resources using standard media types such as JSON, or XML.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </main>
+
+    <!-- Bootstrp 5 JS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <!-- Custom JS -->
+    <script src="./js/app.js"></script>
+</body>
+</html>
